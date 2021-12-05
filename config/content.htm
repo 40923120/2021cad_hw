@@ -99,7 +99,8 @@ loop="loop" muted="" playsinline=""autoplay="autoplay"&gt;
 <h1>W11</h1>
 <h2>遇到問題</h2>
 <p>wink無法截圖，之前都是使用學校電腦所以沒有問題，這次使用筆電發現截圖都是電腦截圖，wink並沒有截圖到，剛開始以為是wink可能有損壞所以重新下載一次，但狀況還是一樣，後來才發現筆電上沒有"Pause"這個鍵。</p>
-<p></p>
+<p>解決方案</p>
+<p>先截圖好再跟同學借電腦轉成Wink檔案後，再用自己的電腦做</p>
 <p></p><h2>Wink查驗</h2>
 <p>零件檔案</p>
 <p><a href="https://drive.google.com/drive/folders/1l2AZAgRx0Vi_W8j-4YgWpMGLTzZuPcna?usp=sharing">https://drive.google.com/drive/folders/1l2AZAgRx0Vi_W8j-4YgWpMGLTzZuPcna?usp=sharing</a></p>
@@ -208,13 +209,115 @@ loop="loop" muted="" playsinline=""autoplay="autoplay"&gt;
 <div class="winkVideoControlBarProgressRightClass"></div>
 </div>
 </div>
-<p></p>
-<p>模擬運動</p>
-<p></p>
-<p></p>
-<p></p>
-<div class="winkVideoControlBarProgressThumbClass"></div>
-<div class="winkVideoPlayOverlayClass"></div><h1>最終項目</h1>
+<p><span>CoppeliaSim 組裝</span></p>
+<script>
+var winkVideoData2 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 3 },
+    ],
+    "34": [
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 35 },
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 2 },
+    ],
+    "52": [
+      { type: "gotoframe", rect: { x: 730, y: 576, width: 60, height: 24 }, target: 34 },
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 53 },
+    ],
+    "62": [
+      { type: "gotoframe", rect: { x: 730, y: 576, width: 60, height: 24 }, target: 52 },
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 63 },
+    ],
+    "117": [
+      { type: "gotoframe", rect: { x: 730, y: 576, width: 60, height: 24 }, target: 62 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 118 },
+    ],
+    "189": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 117 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 190 },
+    ],
+    "260": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 189 },
+      { type: "gotoframe", rect: { x: 807, y: 576, width: 60, height: 24 }, target: 261 },
+    ],
+    "329": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 260 },
+      { type: "gotoframe", rect: { x: 807, y: 576, width: 60, height: 24 }, target: 330 },
+    ],
+    "366": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 329 },
+      { type: "gotoframe", rect: { x: 806, y: 576, width: 60, height: 24 }, target: 367 },
+    ],
+    "418": [
+      { type: "gotoframe", rect: { x: 729, y: 576, width: 60, height: 24 }, target: 366 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 419 },
+    ],
+    "471": [
+      { type: "gotoframe", rect: { x: 730, y: 576, width: 60, height: 24 }, target: 418 },
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 472 },
+    ],
+    "478": [
+      { type: "gotoframe", rect: { x: 730, y: 576, width: 60, height: 24 }, target: 471 },
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 479 },
+    ],
+    "499": [
+      { type: "gotoframe", rect: { x: 729, y: 576, width: 60, height: 24 }, target: 478 },
+      { type: "gotoframe", rect: { x: 807, y: 576, width: 60, height: 24 }, target: 500 },
+    ],
+    "545": [
+      { type: "gotoframe", rect: { x: 728, y: 576, width: 60, height: 24 }, target: 499 },
+      { type: "gotoframe", rect: { x: 806, y: 576, width: 60, height: 24 }, target: 546 },
+    ],
+    "601": [
+      { type: "gotoframe", rect: { x: 808, y: 576, width: 60, height: 24 }, target: 602 },
+      { type: "gotoframe", rect: { x: 729, y: 576, width: 60, height: 24 }, target: 545 },
+    ],
+    "652": [
+      { type: "gotoframe", rect: { x: 728, y: 576, width: 60, height: 24 }, target: 601 },
+      { type: "gotoframe", rect: { x: 804, y: 576, width: 60, height: 24 }, target: 653 },
+    ],
+    "664": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 652 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 665 },
+    ],
+    "728": [
+      { type: "gotoframe", rect: { x: 731, y: 576, width: 60, height: 24 }, target: 664 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 729 },
+    ],
+    "792": [
+      { type: "gotoframe", rect: { x: 728, y: 576, width: 60, height: 24 }, target: 728 },
+      { type: "gotoframe", rect: { x: 805, y: 576, width: 60, height: 24 }, target: 793 },
+    ],
+    "857": [
+      { type: "gotoframe", rect: { x: 729, y: 576, width: 60, height: 24 }, target: 792 },
+      { type: "gotoframe", rect: { x: 806, y: 576, width: 60, height: 24 }, target: 858 },
+    ],
+    "922": [
+      { type: "gotoframe", rect: { x: 808, y: 576, width: 60, height: 24 }, target: 923 },
+      { type: "gotoframe", rect: { x: 728, y: 576, width: 60, height: 24 }, target: 857 },
+    ],
+    "986": [
+      { type: "gotoframe", rect: { x: 729, y: 576, width: 60, height: 24 }, target: 922 },
+    ],
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData2" height="600" width="900">
+loop="loop" muted="" playsinline=""autoplay="autoplay"&gt;
+<source src="./../downloads/123456789.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass">運動模擬</div>
+<div class="winkVideoControlBarProgressRightClass"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/WULJ2HGIkYw" width="560"></iframe></div>
+</div>
+<div class="winkVideoControlBarClass"></div>
+</div><h1>最終項目</h1>
 <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">最終項目佔階段進度40%</span></span></p>
 <p><span style="background-color: #ffff99;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2a 與 2b 必須在 2022.01.06 上師之前完成 Final Project</span></span></span></p>
 <p><a href="https://github.com/mdecourse/cad2021/discussions/8"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">最終項目具體項目成果回報區</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將於2021.12.09開啟，於</span></span><span style="background-color: #ff99cc;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2022.01.05 22:00 關閉</span></span></span></p>
